@@ -160,6 +160,7 @@
     <li><a href="#que-es">¿Qué es GuardMyWay?</a></li>
     <li><a href="#empezar">Cómo empezar</a></li>
     <li><a href="#codigo-rojo">El Código Rojo (SOS)</a></li>
+    <li><a href="#background">App minimizada o en segundo plano</a></li>
     <li><a href="#cancelar">Cómo cancelar el SOS</a></li>
     <li><a href="#guardianes">Guardianes</a></li>
     <li><a href="#rutas">Rutas seguras</a></li>
@@ -171,7 +172,7 @@
 
 <h2 id="que-es">1. ¿Qué es GuardMyWay?</h2>
 <p>GuardMyWay es una app de seguridad personal. Con un solo gesto activas el <strong>Código Rojo</strong> — la app graba audio, registra tu ubicación GPS y avisa a tus guardianes al instante.</p>
-<p>Está pensada para momentos en los que te sientes vulnerable: volviendo a casa de noche, en zonas poco transitadas, en situaciones de riesgo donde no tienes tiempo de llamar a nadie.</p>
+<p>Está pensada para momentos en los que te sientes vulnerable: volviendo a casa de noche, en zonas poco transitadas, en situaciones sobrevenidas de riesgo donde no tienes tiempo de llamar o avisar a nadie. Tus guardianes serán los que intenten contactar contigo y, ante una eventual imposibilidad de conseguirlo, contactarán enseguida a las autoridades compartiéndoles tu ubicación geolocalizada.</p>
 
 <h2 id="empezar">2. Cómo empezar</h2>
 
@@ -208,7 +209,28 @@
 
 <div class="tip">💡 Durante el Código Rojo puedes ocultar la pantalla (icono del candado) para que no se vea que tienes la app abierta. La grabación continúa en segundo plano.</div>
 
-<h2 id="cancelar">4. Cómo cancelar el SOS</h2>
+<h2 id="background">4. App minimizada o en segundo plano</h2>
+<p>Una vez activado el Código Rojo, puedes minimizar la app o apagar la pantalla. Esto es lo que ocurre en cada caso:</p>
+
+<div class="card">
+  <h3 style="margin-top:0">✅ Funciona con la app minimizada</h3>
+  <ul>
+    <li><strong>GPS en background</strong> — sigue registrando y enviando tu ubicación a los guardianes.</li>
+    <li><strong>Grabación de audio</strong> — continúa en segundo plano sin interrupciones.</li>
+    <li><strong>Subida de evidencias</strong> — los fragmentos de audio se siguen subiendo a la nube cada 30 segundos.</li>
+    <li><strong>Notificación persistente</strong> — Android muestra un aviso en la barra de estado para que el sistema no cierre la app.</li>
+  </ul>
+</div>
+
+<div class="warning">
+  ⚠️ <strong>No funciona con la app minimizada:</strong> la activación por sacudida y por botones de volumen solo están disponibles con la app en primer plano. Si minimizas la app durante el SOS, estas formas de activación se desactivan temporalmente — pero el SOS ya está activo y sigue funcionando.
+</div>
+
+<div class="warning">
+  ⚠️ <strong>App cerrada completamente:</strong> si cierras la app (la eliminas de las apps recientes), el Código Rojo se detiene. El SOS solo funciona mientras la app está abierta o minimizada, nunca cuando está cerrada del todo.
+</div>
+
+<h2 id="cancelar">5. Cómo cancelar el SOS</h2>
 <p>Para cancelar el Código Rojo pulsa el botón <strong>"Estoy a salvo — cancelar protocolo"</strong>. La app pedirá que te autentiques para confirmar que eres tú quien cancela:</p>
 <ul>
   <li>Huella dactilar</li>
@@ -220,7 +242,7 @@
 
 <div class="warning">⚠️ La autenticación para cancelar es intencional — evita que alguien que te tenga retenido pueda cancelar el SOS en tu lugar.</div>
 
-<h2 id="guardianes">5. Guardianes</h2>
+<h2 id="guardianes">6. Guardianes</h2>
 <p>Los guardianes son las personas de confianza que recibirán tus alertas SOS.</p>
 
 <h3>Requisitos</h3>
@@ -247,7 +269,7 @@
   <li><span class="badge green">FAM</span> Hasta 10 guardianes</li>
 </ul>
 
-<h2 id="rutas">6. Rutas seguras</h2>
+<h2 id="rutas">7. Rutas seguras</h2>
 <p>Las rutas seguras son un sistema de check-in automático para trayectos que haces habitualmente — volver a casa, ir al trabajo de noche, etc.</p>
 
 <h3>Cómo funcionan</h3>
@@ -261,7 +283,7 @@
   <p style="margin:0">Creas una ruta "Vuelta del trabajo" con <strong>tiempo límite de 30 minutos</strong> e <strong>intervalo de check-in de 10 minutos</strong>. La app te preguntará "¿Estás bien?" a los 10 y 20 minutos. Si llegas a los 30 sin confirmar, activa el SOS automáticamente.</p>
 </div>
 
-<h2 id="planes">7. Planes</h2>
+<h2 id="planes">8. Planes</h2>
 
 <div class="plan-grid">
   <div class="plan-card">
@@ -299,7 +321,7 @@
 
 <div class="tip">💡 Durante la prueba beta todos los testers tienen acceso al plan Free. Si quieres probar las funciones de Plus o Family, contacta con el desarrollador.</div>
 
-<h2 id="privacidad">8. Permisos y privacidad</h2>
+<h2 id="privacidad">9. Permisos y privacidad</h2>
 <p>GuardMyWay solicita tres permisos en el dispositivo. Aquí te explicamos para qué se usa cada uno:</p>
 
 <div class="card">
@@ -319,7 +341,7 @@
 
 <p>Puedes consultar nuestra <a href="https://astrowatcher.github.io/guardmyway-legal/" style="color:#4F7FFF;">política de privacidad completa</a> para más detalles.</p>
 
-<h2 id="testers">9. Qué probar como tester</h2>
+<h2 id="testers">10. Qué probar como tester</h2>
 <p>Gracias por participar en la prueba beta. Estas son las cosas que más nos interesa que pruebes:</p>
 
 <ol>
@@ -328,6 +350,7 @@
   <li><strong>Código Rojo con botón</strong> — actívalo y cancélalo. ¿Llega la notificación a tu guardián?</li>
   <li><strong>Código Rojo con sacudida</strong> — agita el móvil con fuerza. ¿Se activa?</li>
   <li><strong>Código Rojo con volumen</strong> — pulsa repetidamente los botones de volumen.</li>
+  <li><strong>SOS con app minimizada</strong> — activa el Código Rojo y minimiza la app. Comprueba que la notificación persistente aparece en la barra de estado y que tu guardián sigue viendo tu ubicación actualizada.</li>
   <li><strong>SOS sin conexión</strong> — activa modo avión, activa el SOS, espera 30 segundos, cancela, desactiva modo avión. Comprueba en la app que el SOS aparece registrado en el historial y que las grabaciones de audio se han subido correctamente.</li>
   <li><strong>Ruta segura</strong> — crea una ruta con tiempo límite corto (5 min) y deja que expire sin confirmar. ¿Se activa el SOS automáticamente?</li>
   <li><strong>Vista del guardián</strong> — cuando tu <strong>protegido</strong> active el SOS, abre la app y comprueba que ves su ubicación.</li>
