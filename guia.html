@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía de uso — GuardMyWay</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+      color: #1a1a1a;
+      line-height: 1.7;
+      background: #fff;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #eee;
+    }
+    header img { width: 48px; height: 48px; }
+    header h1 { font-size: 22px; font-weight: 600; }
+    header p { font-size: 14px; color: #666; margin-top: 2px; }
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 48px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #4F7FFF;
+      color: #0A0A0F;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 24px;
+      margin-bottom: 8px;
+      color: #0A0A0F;
+    }
+    p { margin-bottom: 14px; color: #333; }
+    ul, ol { padding-left: 22px; margin-bottom: 16px; }
+    li { margin-bottom: 8px; color: #333; }
+    .tip {
+      background: #EFF4FF;
+      border-left: 4px solid #4F7FFF;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #333;
+    }
+    .warning {
+      background: #FFF8ED;
+      border-left: 4px solid #F59E0B;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #333;
+    }
+    .card {
+      background: #F9F9F9;
+      border: 1px solid #E8E7E4;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 16px 0;
+    }
+    .plan-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin: 16px 0;
+    }
+    .plan-card {
+      border: 1px solid #E8E7E4;
+      border-radius: 12px;
+      padding: 18px;
+      background: #fff;
+    }
+    .plan-card.plus { border-color: #4F7FFF; }
+    .plan-card.family { border-color: #16A34A; }
+    .plan-title { font-weight: 600; font-size: 16px; margin-bottom: 4px; }
+    .plan-price { font-size: 13px; color: #888; margin-bottom: 12px; }
+    .plan-card ul { margin: 0; padding-left: 18px; }
+    .plan-card li { font-size: 13px; margin-bottom: 6px; }
+    .badge {
+      display: inline-block;
+      background: #0A0A0F;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 999px;
+      margin-right: 6px;
+      letter-spacing: 0.5px;
+    }
+    .badge.blue { background: #4F7FFF; }
+    .badge.green { background: #16A34A; }
+    .toc {
+      background: #F9F9F9;
+      border: 1px solid #E8E7E4;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 40px;
+    }
+    .toc h3 { margin-top: 0; margin-bottom: 12px; font-size: 15px; }
+    .toc ol { margin: 0; }
+    .toc li { font-size: 14px; }
+    .toc a { color: #4F7FFF; text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    .step {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 14px;
+      align-items: flex-start;
+    }
+    .step-num {
+      min-width: 28px;
+      height: 28px;
+      background: #4F7FFF;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 600;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid #eee;
+      font-size: 13px;
+      color: #888;
+      text-align: center;
+    }
+    footer a { color: #4F7FFF; }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=crop/MNdRonmiaOoCBqA2/logo-guardmyway-RqL0BTj6c9uzbQgY.png" alt="GuardMyWay">
+  <div>
+    <h1>Guía de uso — GuardMyWay</h1>
+    <p>Versión beta · Junio 2026</p>
+  </div>
+</header>
+
+<div class="toc">
+  <h3>Contenido</h3>
+  <ol>
+    <li><a href="#que-es">¿Qué es GuardMyWay?</a></li>
+    <li><a href="#empezar">Cómo empezar</a></li>
+    <li><a href="#codigo-rojo">El Código Rojo (SOS)</a></li>
+    <li><a href="#cancelar">Cómo cancelar el SOS</a></li>
+    <li><a href="#guardianes">Guardianes</a></li>
+    <li><a href="#rutas">Rutas seguras</a></li>
+    <li><a href="#planes">Planes</a></li>
+    <li><a href="#privacidad">Permisos y privacidad</a></li>
+    <li><a href="#testers">Qué probar como tester</a></li>
+  </ol>
+</div>
+
+<h2 id="que-es">1. ¿Qué es GuardMyWay?</h2>
+<p>GuardMyWay es una app de seguridad personal. Con un solo gesto activas el <strong>Código Rojo</strong> — la app graba audio, registra tu ubicación GPS y avisa a tus guardianes al instante.</p>
+<p>Está pensada para momentos en los que te sientes vulnerable: volviendo a casa de noche, en zonas poco transitadas, en situaciones de riesgo donde no tienes tiempo de llamar a nadie.</p>
+
+<h2 id="empezar">2. Cómo empezar</h2>
+
+<h3>Registro</h3>
+<div class="step"><div class="step-num">1</div><div>Abre la app e introduce tu email y contraseña para crear una cuenta.</div></div>
+<div class="step"><div class="step-num">2</div><div>Completa tu perfil con tu nombre y teléfono — tus guardianes los verán cuando reciban una alerta.</div></div>
+<div class="step"><div class="step-num">3</div><div>Concede los permisos que la app solicita (ver sección <a href="#privacidad">Permisos</a>).</div></div>
+
+<h3>Añadir guardianes</h3>
+<p>Ve a la pestaña <strong>Guardianes</strong> y añade al menos una persona de confianza. Necesitarás su nombre, teléfono o email. Tu guardián debe tener GuardMyWay instalado para recibir las alertas.</p>
+
+<div class="tip">💡 Para esta prueba beta, coordínate con otro tester para ser guardianes el uno del otro.</div>
+
+<h2 id="codigo-rojo">3. El Código Rojo (SOS)</h2>
+<p>El Código Rojo es la función principal de GuardMyWay. Puedes activarlo de tres formas:</p>
+
+<div class="card">
+  <h3 style="margin-top:0">Formas de activación</h3>
+  <ul>
+    <li><strong>Botón SOS</strong> — toca el botón rojo en la pantalla principal. Cuenta atrás de 3 segundos antes de activarse (puedes cancelar).</li>
+    <li><strong>Sacudida del móvil</strong> — agita el dispositivo con fuerza. Se activa inmediatamente sin cuenta atrás.</li>
+    <li><strong>Botones de volumen</strong> — pulsa repetidamente los botones de volumen. Útil cuando no puedes mirar la pantalla.</li>
+  </ul>
+</div>
+
+<h3>¿Qué pasa cuando se activa?</h3>
+<ul>
+  <li>La app empieza a <strong>grabar audio</strong> automáticamente.</li>
+  <li>Se activa el <strong>GPS</strong> y registra tu ubicación en tiempo real.</li>
+  <li>Tus guardianes reciben una <strong>notificación push</strong> con tu ubicación.</li>
+  <li>Las grabaciones se suben a la nube en fragmentos de 30 segundos.</li>
+  <li>Todo funciona <strong>sin conexión a internet</strong> — la app guarda los datos localmente y los sincroniza cuando vuelve la conexión.</li>
+</ul>
+
+<div class="tip">💡 Durante el Código Rojo puedes ocultar la pantalla (icono del candado) para que no se vea que tienes la app abierta. La grabación continúa en segundo plano.</div>
+
+<h2 id="cancelar">4. Cómo cancelar el SOS</h2>
+<p>Para cancelar el Código Rojo pulsa el botón <strong>"Estoy a salvo — cancelar protocolo"</strong>. La app pedirá que te autentiques para confirmar que eres tú quien cancela:</p>
+<ul>
+  <li>Huella dactilar</li>
+  <li>Reconocimiento facial</li>
+  <li>Patrón de desbloqueo</li>
+  <li>PIN o código</li>
+</ul>
+<p>Se usará el método que tengas configurado en tu dispositivo. Si no tienes ninguno configurado, la cancelación es inmediata.</p>
+
+<div class="warning">⚠️ La autenticación para cancelar es intencional — evita que alguien que te tenga retenido pueda cancelar el SOS en tu lugar.</div>
+
+<h2 id="guardianes">5. Guardianes</h2>
+<p>Los guardianes son las personas de confianza que recibirán tus alertas SOS.</p>
+
+<h3>Requisitos</h3>
+<ul>
+  <li>El guardián <strong>debe tener GuardMyWay instalado</strong> para recibir notificaciones push y ver tu ubicación en tiempo real.</li>
+  <li>Debe tener una cuenta activa en la app.</li>
+  <li>Necesitas añadirle desde tu pantalla de Guardianes con su email o teléfono.</li>
+</ul>
+
+<div class="warning">⚠️ En esta versión beta, los guardianes sin la app instalada no reciben ninguna notificación. La notificación por SMS o email para guardianes sin app está planificada para una versión futura.</div>
+
+<h3>¿Qué ve el guardián cuando activas el SOS?</h3>
+<ul>
+  <li>Recibe una notificación push con tu nombre y ubicación.</li>
+  <li>Puede abrir la app y ver tu posición GPS en tiempo real.</li>
+  <li>Puede confirmar que va en tu ayuda con el botón "Estoy en camino".</li>
+  <li>Según el plan, puede escuchar las grabaciones de audio.</li>
+</ul>
+
+<h3>Límite de guardianes según plan</h3>
+<ul>
+  <li><span class="badge">FREE</span> Hasta 2 guardianes</li>
+  <li><span class="badge blue">PLUS</span> Hasta 5 guardianes</li>
+  <li><span class="badge green">FAM</span> Hasta 10 guardianes</li>
+</ul>
+
+<h2 id="rutas">6. Rutas seguras</h2>
+<p>Las rutas seguras son un sistema de check-in automático para trayectos que haces habitualmente — volver a casa, ir al trabajo de noche, etc.</p>
+
+<h3>Cómo funcionan</h3>
+<div class="step"><div class="step-num">1</div><div>Crea una ruta con un nombre, un <strong>tiempo límite</strong> y un <strong>intervalo de check-in</strong>.</div></div>
+<div class="step"><div class="step-num">2</div><div>Activa la ruta cuando inicias el trayecto.</div></div>
+<div class="step"><div class="step-num">3</div><div>La app te pedirá confirmar que estás bien cada X minutos (el intervalo de check-in).</div></div>
+<div class="step"><div class="step-num">4</div><div>Si no confirmas antes de que expire el tiempo límite, se activa el Código Rojo automáticamente.</div></div>
+
+<div class="card">
+  <h3 style="margin-top:0">Ejemplo</h3>
+  <p style="margin:0">Creas una ruta "Vuelta del trabajo" con <strong>tiempo límite de 30 minutos</strong> e <strong>intervalo de check-in de 10 minutos</strong>. La app te preguntará "¿Estás bien?" a los 10 y 20 minutos. Si llegas a los 30 sin confirmar, activa el SOS automáticamente.</p>
+</div>
+
+<h2 id="planes">7. Planes</h2>
+
+<div class="plan-grid">
+  <div class="plan-card">
+    <div class="plan-title">Free</div>
+    <div class="plan-price">0€ / mes</div>
+    <ul>
+      <li>Código Rojo ilimitado</li>
+      <li>Hasta 2 guardianes</li>
+      <li>GPS en tiempo real</li>
+      <li>Grabaciones 7 días</li>
+      <li>Solo el usuario ve sus grabaciones</li>
+    </ul>
+  </div>
+  <div class="plan-card plus">
+    <div class="plan-title">Plus</div>
+    <div class="plan-price">2,99€ / mes</div>
+    <ul>
+      <li>Todo lo del plan Free</li>
+      <li>Hasta 5 guardianes</li>
+      <li>Guardianes escuchan grabaciones durante SOS activo</li>
+      <li>Grabaciones 30 días</li>
+    </ul>
+  </div>
+  <div class="plan-card family">
+    <div class="plan-title">Family</div>
+    <div class="plan-price">5,99€ / mes</div>
+    <ul>
+      <li>Todo lo del plan Plus</li>
+      <li>Hasta 10 guardianes</li>
+      <li>Grabaciones 90 días</li>
+      <li>Descarga legal de evidencias</li>
+    </ul>
+  </div>
+</div>
+
+<div class="tip">💡 Durante la prueba beta todos los testers tienen acceso al plan Free. Si quieres probar las funciones de Plus o Family, contacta con el desarrollador.</div>
+
+<h2 id="privacidad">8. Permisos y privacidad</h2>
+<p>GuardMyWay solicita tres permisos en el dispositivo. Aquí te explicamos para qué se usa cada uno:</p>
+
+<div class="card">
+  <h3 style="margin-top:0">📍 Ubicación (siempre activa)</h3>
+  <p style="margin-bottom:0">Necesaria para registrar y compartir tu posición GPS durante el Código Rojo. <strong>Solo se activa cuando el SOS está en marcha</strong> — no registramos tu ubicación en ningún otro momento.</p>
+</div>
+
+<div class="card">
+  <h3 style="margin-top:0">🎙 Micrófono</h3>
+  <p style="margin-bottom:0">Necesario para grabar audio durante el Código Rojo como evidencia. <strong>Solo se graba cuando el SOS está activo.</strong> Las grabaciones se almacenan en servidores seguros y solo tú (y tus guardianes según el plan) puedes acceder a ellas.</p>
+</div>
+
+<div class="card">
+  <h3 style="margin-top:0">🔔 Notificaciones</h3>
+  <p style="margin-bottom:0">Necesarias para que tus guardianes reciban las alertas SOS y para que tú recibas confirmaciones cuando un guardián va en tu ayuda.</p>
+</div>
+
+<p>Puedes consultar nuestra <a href="https://astrowatcher.github.io/guardmyway-legal/" style="color:#4F7FFF;">política de privacidad completa</a> para más detalles.</p>
+
+<h2 id="testers">9. Qué probar como tester</h2>
+<p>Gracias por participar en la prueba beta. Estas son las cosas que más nos interesa que pruebes:</p>
+
+<ol>
+  <li><strong>Registro y permisos</strong> — ¿el proceso de registro es claro? ¿Los permisos se explican bien?</li>
+  <li><strong>Añadir un guardián</strong> — busca a otro tester y añadeos mutuamente como guardianes.</li>
+  <li><strong>Código Rojo con botón</strong> — actívalo y cancélalo. ¿Llega la notificación a tu guardián?</li>
+  <li><strong>Código Rojo con sacudida</strong> — agita el móvil con fuerza. ¿Se activa?</li>
+  <li><strong>Código Rojo con volumen</strong> — pulsa repetidamente los botones de volumen.</li>
+  <li><strong>SOS sin conexión</strong> — activa modo avión, activa el SOS, espera 30 segundos, cancela, desactiva modo avión. ¿Se sincronizan los datos?</li>
+  <li><strong>Ruta segura</strong> — crea una ruta con tiempo límite corto (5 min) y deja que expire sin confirmar. ¿Se activa el SOS automáticamente?</li>
+  <li><strong>Vista del guardián</strong> — cuando tu guardián active el SOS, abre la app y comprueba que ves su ubicación.</li>
+</ol>
+
+<div class="tip">💡 Cualquier bug, comportamiento inesperado o sugerencia puedes enviarlo a <a href="mailto:guard@guardmyway.app" style="color:#4F7FFF;">guard@guardmyway.app</a></div>
+
+<footer>
+  <p>GuardMyWay · <a href="https://guardmyway.app">guardmyway.app</a> · <a href="https://astrowatcher.github.io/guardmyway-legal/">Política de privacidad</a></p>
+  <p style="margin-top:8px;">© 2026 Astrowatcher Engineering. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
