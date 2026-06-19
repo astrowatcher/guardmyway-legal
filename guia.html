@@ -133,6 +133,15 @@
       flex-shrink: 0;
       margin-top: 2px;
     }
+    .screenshot {
+      max-width: 280px;
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid #E8E7E4;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      display: block;
+      margin: 16px auto;
+    }
     footer {
       margin-top: 60px;
       padding-top: 24px;
@@ -174,6 +183,8 @@
 <p>GuardMyWay es una app de seguridad personal. Con un solo gesto activas el <strong>Código Rojo</strong> — la app graba audio, registra tu ubicación GPS y avisa a tus guardianes al instante.</p>
 <p>Está pensada para momentos en los que te sientes vulnerable: volviendo a casa de noche, en zonas poco transitadas, en situaciones sobrevenidas de riesgo donde no tienes tiempo de llamar o avisar a nadie. Tus guardianes serán los que intenten contactar contigo y, ante una eventual imposibilidad de conseguirlo, contactarán enseguida a las autoridades compartiéndoles tu ubicación geolocalizada.</p>
 
+<img src="https://astrowatcher.github.io/guardmyway-legal/screenshot-home.jpg" alt="Pantalla principal de GuardMyWay" class="screenshot">
+
 <h2 id="empezar">2. Cómo empezar</h2>
 
 <h3>Registro</h3>
@@ -197,6 +208,8 @@
     <li><strong>Botones de volumen</strong> — pulsa repetidamente los botones de volumen. Útil cuando no puedes mirar la pantalla.</li>
   </ul>
 </div>
+
+<img src="https://astrowatcher.github.io/guardmyway-legal/screenshot-sos-active.jpg" alt="Pantalla del Código Rojo activo" class="screenshot">
 
 <h3>¿Qué pasa cuando se activa?</h3>
 <ul>
@@ -227,8 +240,15 @@
 </div>
 
 <div class="warning">
-  ⚠️ <strong>App cerrada completamente:</strong> si cierras la app (la eliminas de las apps recientes), el Código Rojo se detiene. El SOS solo funciona mientras la app está abierta o minimizada, nunca cuando está cerrada del todo.
+  ⚠️ <strong>App cerrada completamente:</strong> si <strong>tú</strong> (la persona en peligro) cierras la app por completo durante un Código Rojo activo, el SOS se detiene. Mientras estás en una emergencia, la app debe quedarse al menos minimizada, nunca cerrada del todo.
 </div>
+
+<div class="tip">
+  💡 <strong>Esto NO aplica a tu guardián.</strong> Tu guardián <strong>no necesita tener GuardMyWay abierta, minimizada, ni siquiera el móvil desbloqueado</strong> para recibir tu alerta. Las notificaciones push funcionan a través del sistema operativo, así que le llegará igual con el móvil bloqueado y la app totalmente cerrada — igual que le llegaría un mensaje de WhatsApp. Solo es importante que tu guardián <strong>no haya forzado el cierre</strong> de la app manualmente desde Ajustes (la opción "Forzar detención"), ya que eso sí puede bloquear temporalmente la entrega de notificaciones hasta que la vuelva a abrir una vez.
+</div>
+
+<img src="https://astrowatcher.github.io/guardmyway-legal/screenshot-notification.jpg" alt="Notificación push de Código Rojo con la app cerrada" class="screenshot">
+<p class="screenshot-caption" style="text-align:center;font-size:13px;color:#888;margin-top:-8px;">Así le llega la alerta al guardián, aunque tenga la app cerrada</p>
 
 <h2 id="cancelar">5. Cómo cancelar el SOS</h2>
 <p>Para cancelar el Código Rojo pulsa el botón <strong>"Estoy a salvo — cancelar protocolo"</strong>. La app pedirá que te autentiques para confirmar que eres tú quien cancela:</p>
@@ -254,6 +274,8 @@
 
 <div class="warning">⚠️ En esta versión beta, los guardianes sin la app instalada no reciben ninguna notificación. La notificación por SMS o email para guardianes sin app está planificada para una versión futura.</div>
 
+<img src="https://astrowatcher.github.io/guardmyway-legal/screenshot-guardians.jpg" alt="Pantalla de gestión de guardianes, mostrando quién tiene la app instalada" class="screenshot">
+
 <h3>¿Qué ve el guardián cuando activas el SOS?</h3>
 <ul>
   <li>Recibe una notificación push con tu nombre y ubicación.</li>
@@ -261,6 +283,8 @@
   <li>Puede confirmar que va en tu ayuda con el botón "Estoy en camino".</li>
   <li>Según el plan, puede escuchar las grabaciones de audio.</li>
 </ul>
+
+<img src="https://astrowatcher.github.io/guardmyway-legal/screenshot-guardian-view.jpg" alt="Vista del guardián durante una emergencia activa" class="screenshot">
 
 <h3>Límite de guardianes según plan</h3>
 <ul>
@@ -282,6 +306,8 @@
   <h3 style="margin-top:0">Ejemplo</h3>
   <p style="margin:0">Creas una ruta "Vuelta del trabajo" con <strong>tiempo límite de 30 minutos</strong> e <strong>intervalo de check-in de 10 minutos</strong>. La app te preguntará "¿Estás bien?" a los 10 y 20 minutos. Si llegas a los 30 sin confirmar, activa el SOS automáticamente.</p>
 </div>
+
+<img src="https://astrowatcher.github.io/guardmyway-legal/screenshot-routes.jpg" alt="Pantalla de Rutas seguras con rutas guardadas" class="screenshot">
 
 <h2 id="planes">8. Planes</h2>
 
@@ -321,6 +347,11 @@
 
 <div class="tip">💡 Durante la prueba beta todos los testers tienen acceso al plan Free. Si quieres probar las funciones de Plus o Family, contacta con el desarrollador.</div>
 
+<h3>Tus grabaciones</h3>
+<p>Si tu plan incluye acceso a grabaciones, puedes consultarlas desde tu pantalla de evidencias. Cada Código Rojo se divide en fragmentos de audio numerados, con la fecha y hora de activación.</p>
+
+<img src="https://astrowatcher.github.io/guardmyway-legal/screenshot-recordings.jpg" alt="Pantalla de Mis grabaciones con el historial de evidencias" class="screenshot">
+
 <h2 id="privacidad">9. Permisos y privacidad</h2>
 <p>GuardMyWay solicita varios permisos en el dispositivo. Aquí te explicamos para qué se usa cada uno:</p>
 
@@ -349,6 +380,13 @@
   <p style="margin-bottom:0">Algunos fabricantes (especialmente Xiaomi, Huawei y algunos Samsung) restringen agresivamente las apps en segundo plano para ahorrar batería, lo que puede bloquear la llegada de notificaciones SOS. Te recomendamos seleccionar <strong>"Sin restricciones"</strong> para GuardMyWay cuando te lo pida la app — así te asegures de que las alertas siempre lleguen, tanto si eres tú quien activa el SOS como si eres guardián de alguien. Es opcional, pero <strong>muy importante</strong> para que la app cumpla su función de seguridad de forma fiable.</p>
 </div>
 
+<img src="https://astrowatcher.github.io/guardmyway-legal/screenshot-permissions.jpg" alt="Pantalla de permisos necesarios, incluyendo No molestar y Optimización de batería" class="screenshot">
+
+<h3>Pantalla de Privacidad dentro de la app</h3>
+<p>Además de los permisos del sistema, en la pestaña <strong>Privacidad</strong> de la app puedes controlar qué se comparte: ubicación en tiempo real, grabación al activar el SOS, retención de evidencia, y otras opciones.</p>
+
+<img src="https://astrowatcher.github.io/guardmyway-legal/screenshot-privacy.jpg" alt="Pantalla de Privacidad con controles de qué se comparte" class="screenshot">
+
 <p>Puedes consultar nuestra <a href="https://astrowatcher.github.io/guardmyway-legal/" style="color:#4F7FFF;">política de privacidad completa</a> para más detalles.</p>
 
 <h2 id="testers">10. Qué probar como tester</h2>
@@ -360,7 +398,7 @@
   <li><strong>Código Rojo con botón</strong> — actívalo y cancélalo. ¿Llega la notificación a tu guardián?</li>
   <li><strong>Código Rojo con sacudida</strong> — agita el móvil con fuerza. ¿Se activa?</li>
   <li><strong>Código Rojo con volumen</strong> — pulsa repetidamente los botones de volumen.</li>
-  <li><strong>Alerta con el móvil en silencio</strong> — pide a tu guardián que ponga el móvil en silencio o "No molestar" y luego actívale el Código Rojo. ¿Le suena y vibra la alerta igualmente?</li>
+  <li><strong>Alerta con el móvil en silencio</strong> — pide a tu guardián que ponga el móvil en silencio o "No molestar", e incluso que cierre la app del todo, y luego actívale el Código Rojo. ¿Le suena y vibra la alerta igualmente, aunque la app esté cerrada?</li>
   <li><strong>SOS con app minimizada</strong> — activa el Código Rojo y minimiza la app. Comprueba que la notificación persistente aparece en la barra de estado y que tu guardián sigue viendo tu ubicación actualizada.</li>
   <li><strong>SOS sin conexión</strong> — activa modo avión, activa el SOS, espera 30 segundos, cancela, desactiva modo avión. Comprueba en la app que el SOS aparece registrado en el historial y que las grabaciones de audio se han subido correctamente.</li>
   <li><strong>Ruta segura</strong> — crea una ruta con tiempo límite corto (5 min) y deja que expire sin confirmar. ¿Se activa el SOS automáticamente?</li>
